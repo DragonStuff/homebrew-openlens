@@ -7,16 +7,18 @@ You could skip this login window in prior versions but it’s not skippable anym
 It periodically checks latest version of Lens. If a new version is released, triggers a new CI job to build and release original lensapp/lens repo for macOS.
 Since lensapp/lens repo does not have lenscloud extension it doesn’t have login page.
 
+Originally from https://github.com/ykursadkaya/homebrew-openlens
+
 # Installing
 
 - Download ZIP file from releases page
 
-[https://github.com/ykursadkaya/homebrew-openlens/releases](https://github.com/ykursadkaya/homebrew-openlens/releases)
+[https://github.com/DragonStuff/homebrew-openlens/releases](https://github.com/DragonStuff/homebrew-openlens/releases)
 
 -  This repo is also a Homebrew Tap and automatically updates the openlens cask with the latest version. So you can use with Homebrew as well.
 
 
 ```bash
-brew tap ykursadkaya/openlens
+brew tap DragonStuff/openlens
 brew install openlens
 ```
