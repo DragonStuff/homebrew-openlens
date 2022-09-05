@@ -3,13 +3,13 @@ cask "openlens" do
 
   sha256 "b4634fecb4e2eb12e8cff8982e075f696b0886786c4c62bbd41a6ef601b1577d"
 
-  url "https://github.com/ykursadkaya/homebrew-openlens/releases/download/v#{version}/OpenLens-#{version}.zip"
+  url "https://github.com/DragonStuff/homebrew-openlens/releases/download/v#{version}/OpenLens-#{version}.zip"
   name "Open Lens"
   desc "Kubernetes IDE"
   homepage "https://k8slens.dev/"
 
   livecheck do
-    url "https://raw.githubusercontent.com/ykursadkaya/homebrew-openlens/main/version"
+    url "https://raw.githubusercontent.com/DragonStuff/homebrew-openlens/main/version"
     strategy :page_match
     regex(/(\d+(?:\.\d+)*)/)
   end
