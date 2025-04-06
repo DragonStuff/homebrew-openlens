@@ -22,7 +22,7 @@ jobs:
         run: |
           wget "https://github.com/lensapp/lens/archive/refs/heads/release/v6.5.zip"
           unzip v6.5.zip
-          cd lens
+          cd lens-release-v6.5
           make build
           mv dist/OpenLens-v6.5-latest.*.zip dist/OpenLens-v6.5.zip
           ls -la dist
