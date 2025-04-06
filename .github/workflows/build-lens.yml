@@ -20,9 +20,9 @@ jobs:
           node-version: 16.15.0
       - name: Build Lens
         run: |
-          wget "https://github.com/lensapp/lens/archive/refs/heads/release/v6.5.zip"
-          unzip v6.5.zip
-          cd lens-release-v6.5
+          git clone https://github.com/lensapp/lens.git
+          cd lens
+          git checkout release/v6.5
           make build
           mv dist/OpenLens-v6.5-latest.*.zip dist/OpenLens-v6.5.zip
           ls -la dist
@@ -42,4 +42,3 @@ jobs:
         with:
           add: 'Casks'
           message: 'openlens ${{ env.LENS_VERSION }}'
-
