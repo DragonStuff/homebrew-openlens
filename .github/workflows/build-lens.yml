@@ -22,7 +22,7 @@ jobs:
         run: |
           git clone https://github.com/lensapp/lens.git
           cd lens
-          git checkout f1a960fd785b62a118acd8b1525d879f39917e21
+          git checkout v${{ env.LENS_VERSION }}
           make build
           mv dist/OpenLens-${{ env.LENS_VERSION }}-latest.*.zip dist/OpenLens-${{ env.LENS_VERSION }}.zip
           ls -la dist
