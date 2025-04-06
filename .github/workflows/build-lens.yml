@@ -20,11 +20,11 @@ jobs:
           node-version: 16.15.0
       - name: Build Lens
         run: |
-          wget "https://github.com/lensapp/lens/archive/refs/heads/release/v${{ env.LENS_VERSION }}.zip"
+          wget "https://github.com/lensapp/lens/archive/refs/heads/release/v6.5.zip"
           unzip lens
           cd lens
           make build
-          mv dist/OpenLens-${{ env.LENS_VERSION }}-latest.*.zip dist/OpenLens-${{ env.LENS_VERSION }}.zip
+          mv dist/OpenLens-v6.5-latest.*.zip dist/OpenLens-v6.5.zip
           ls -la dist
       - name: Release
         uses: softprops/action-gh-release@v0.1.14
