@@ -20,7 +20,7 @@ jobs:
           node-version: 16.15.0
       - name: Build Lens
         run: |
-          wget https://github.com/lensapp/lens/archive/refs/heads/release/v${{ env.LENS_VERSION }}.zip
+          wget "https://github.com/lensapp/lens/archive/refs/heads/release/v${{ env.LENS_VERSION }}.zip"
           unzip lens
           cd lens
           make build
